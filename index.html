@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="app-main">
+        <header>
+            <!-- <div class="searchInputBox"></div> -->
+            <input type="text" id="search-box" class="search-box" data-city-search placeholder="Search for a City . . ."
+                autocomplete="off">
+        </header>
+        <main>
+            <section class="location">
+                <div class="city" id="city">Kathmandu, NP</div>
+                <div class="date" id="date">Thursday 21 April 2021</div>
+            </section>
+
+        <div class="current">
+            <div class="temp" id="temp">20&deg;C</div>
+            <div class="min-max" id="min-max">20&deg;C/30&deg;C</div>
+            <div class="weather" id="weather">Clear</div>
+            <div class="img"></div>
+        </div>
+     </main>
+    </div>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDd5BF91I95JEJoF6rbJZFBllFEF1l4dyY">
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
